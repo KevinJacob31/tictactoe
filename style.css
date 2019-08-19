@@ -1,0 +1,186 @@
+a { color: inherit; } 
+h1 {
+  font-family: "Comic Sans MS";
+  font-size: 50px; 
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-shadow:
+      0 0 5px  #FF0000,
+      0 0 10px #FF0000,
+      0 0 20px rgb(255,0,0),
+      0 0 40px rgb(255, 102, 0),
+      0 0 50px  #FF0000,
+      0 0 80px rgb(0, 102, 100);
+      cursor:pointer;
+}
+h6 {
+  
+  margin-top:500px;
+  text-align:right;
+  vertical-align: bottom;
+  font-size: 12px;
+  color:white;
+}
+
+td {
+  text-color:white;
+  border: 4px solid #333;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+  vertical-align: middle;
+  font-size: 60px;
+  cursor: pointer;
+}
+table {
+  transition: 0.5s;
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  margin-left: -155px;
+  top: 35%
+}
+table tr td {
+
+  border-top:none;
+  outline: none;
+    border-color: #fff;
+    box-shadow:
+      0 0 5px #00ffff,
+      0 0 10px #00ffff,
+      0 0 20px #00ffff,
+      0 0 40px #000,
+      0 0 50px #00ffff,
+      0 0 80px #000;
+}
+  
+}
+
+table tr:first-child td {
+   border-top: 0;
+}
+
+table tr:last-child td {
+
+  border-bottom: 0;
+}
+table tr td:first-child {
+  
+  border-left: 0;
+}
+table tr td:last-child {
+ 
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  width: 200px;
+  top: 90px;
+position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: SkrrrPaPaPum;
+  animation-name: SkrrrPapaPum;
+  animation-iteration-count: Click;
+}
+body{
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/IjFi-wx/moving-stars-on-black-background_41x3vg3x__F0000.png');
+  background-size:cover;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  text-align: center;
+  margin-top: 30px;
+}
+.btn{
+  vertical-align:bottom;
+  top:370px;
+  border: 1px solid #fff;
+  background: none;
+  padding: 10px 20px;
+  font-shape: bold;
+  font-size: 20px;
+  font-family: "Comic Sans MS";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: SkrrrPaPaPum;
+  animation-name: SkrrrPapaPum;
+  animation-iteration-count: Click;
+}
+.btn2{
+  color: #fff;
+}
+
+.btn2:hover{
+  background-color: #FF0000;
+  color: #fff;
+  border : #fff;
+}
+.btn::before{
+  
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #FF0000;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn2::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  transition: 0.5s;
+}
+
+.btn2:hover::before {
+  background-color:#fff;  
+  height: 180%;
+}
+
+.cell{
+  color: #4cbb17;
+  text-shadow:
+      0 0 5px #000,
+      0 0 10px #000,
+      0 0 20px #4cbb17,
+      0 0 40px #000,
+      0 0 50px #000,
+      0 0 80px #000;
+  transition: 1s;
+  font-family: "Comic Sans MS";
+   
+}
+
+@keyframes SkrrrPapaPum {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
